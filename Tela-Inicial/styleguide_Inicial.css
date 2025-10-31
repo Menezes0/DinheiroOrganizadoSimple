@@ -1,9 +1,0 @@
-:root {
-  --collection-1-background: rgba(39, 46, 51, 1);
-  --collection-1-backgroud-card: rgba(60, 62, 68, 1);
-  --collection-1-color-text: rgba(245, 245, 245, 1);
-  --collection-1-normalbutton: var(--collection-1-buttonselected);
-  --collection-1-buttonselected: rgba(58, 62, 75, 1);
-  --collection-1-button1: rgba(12, 54, 45, 1);
-  --collection-1-headlinetext: rgba(232, 242, 227, 1);
-}

@@ -1,54 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinheiro Organizado</title>
+    <link rel="stylesheet" href="style_Inicial.css"/>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="globals_Inicial.css" />
-  <link rel="stylesheet" href="styleguide_Inicial.css" />
-  <link rel="stylesheet" href="style_Inicial.css" />
-</head>
+  <body>
+    <article id="tela-inicial">
+      <img class="background-photo" src="img/background-photo.png" alt="Background" />
 
-<body>
-  <div class="tela-inicial">
-    <img class="background-photo" src="img/background-photo.png" />
-    <div class="rectangle"></div>
-    <div class="frame"></div>
-    <div class="BOTA-ovejamais">
-      <div class="div-wrapper">
-        <div class="text-wrapper">VEJA MAIS</div>
-      </div>
-    </div>
-    <div class="headline">
-      <div class="div">
-        <div class="frame-2">
+      <div class="overlay-escura"></div>
+
+      <header>
+        <div class="logo-area">
           <div class="group">
-            <img class="vector" src="img/Vector-2.png" />
-            <img class="img" src="img/Vector 1 (1).png" />
-            <img class="vector-2" src="img/Vector 1.png" />
+            <img class="vector" src="img/Vector-2.png" alt="" />
+            <img class="img" src="img/Vector 1 (1).png" alt="" />
+            <img class="vector-2" src="img/Vector 1.png" alt="" />
           </div>
-          <div class="text-wrapper-2">DINHEIRO ORGANIZADO</div>
+          <h1 class="nome-logo">DINHEIRO ORGANIZADO</h1>
         </div>
-        <div class="buttons">
-          <a href="index.html">
-            <div class="frame-wrapper">
-              <div class="frame-3">
-                <div class="text-wrapper-3">INÍCIO</div>
-              </div>
-            </div>
-          </a>
-          <div class="IN-CIO-wrapper">
-            <div class="IN-CIO">CONCEITOS</div>
-          </div>
-          <div class="IN-CIO-wrapper">
-            <div class="IN-CIO-2">DICAS</div>
-          </div>
-          <div class="IN-CIO-wrapper">
-            <div class="IN-CIO-3">CONTATOS</div>
-          </div>
+
+        <nav class="buttons">
+          <a href="#tela-inicial" class="btn ativo">INÍCIO</a>
+          <a href="#conceitos" class="btn">CONCEITOS</a>
+          <a href="#" class="btn">DICAS</a>
+          <a href="#" class="btn">CONTATOS</a>
+        </nav>
+      </header>
+
+      <main class="conteudo">
+        <p class="educacao-financeira">
+          EDUCAÇÃO FINANCEIRA SIMPLES, PRÁTICA E AO SEU ALCANCE.
+        </p>
+        <div class="botao">
+           <a href=#conceitos class="btn-veja-mais">VEJA MAIS</a>
         </div>
+       
+      </main>
+    </article>
+
+     <!-- paginaConceitos -->
+    <article id="conceitos" class="pg-conceitos">
+      <div class="texts">
+        <h1>CONCEITOS BÁSICOS</h1>
+        <p>pequenos conceitos para começar a organizar suas finanças</p>
       </div>
-    </div>
-    <p class="educa-o-financeira">EDUCAÇÃO FINANCEIRA SIMPLES, PRÁTICA E AO SEU ALCANCE.</p>
-  </div>
-</body>
+    
+      <section class="frame">
+        <article class="card1">
+          <div class="building-blocks-2">
+            <div class="text-content">
+              <h2 class="title">O que é orçamento?</h2>
+              <p class="supporting-text">
+                Planejar receitas e despesas para controlar seu dinheiro. Com ele você entende para onde vai seu dinheiro, equilibrando gastos e metas.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card2">
+          <div class="building-blocks-2">
+            <div class="text-content-2">
+              <h2 class="title">O que é poupança e qual sua importância?</h2>
+              <p class="supporting-text">
+                É o hábito de separar uma parte do que você ganha. É importante para lidar com emergências.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card3">
+          <div class="building-blocks-2">
+            <div class="text-content-2">
+              <h2 class="title">Faça metas financeiras</h2>
+              <p class="supporting-text">Defina objetivos claros: viajar, quitar dívidas, poupar.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card4">
+          <div class="building-blocks-2">
+            <div class="text-content-2">
+              <h2 class="title">Como evitar dívidas?</h2>
+              <p class="supporting-text">
+                Não gastar mais do que ganha, cuidado com cartão de crédito e empréstimos.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card5">
+          <div class="building-blocks-2">
+            <div class="text-content-3">
+              <h2 class="title">Como controlar gastos?</h2>
+              <p class="supporting-text">
+                Diferencie necessidades de desejos de compras — o segredo não é cortar, mas equilibrar.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card6">
+          <div class="building-blocks-2">
+            <div class="text-content-2">
+              <h2 class="title">Reflita antes de comprar</h2>
+              <p class="supporting-text">
+                Avalie se realmente precisa ou se é apenas um impulso.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </article>
+  </body>
+</html>
