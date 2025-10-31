@@ -12,7 +12,9 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: "Alatsi-Regular", Helvetica, sans-serif;
+  scrollbar-width: none;
 }
+
 
 a {
   text-decoration: none;
@@ -378,6 +380,7 @@ header {
 
 /* ====== RESPONSIVIDADE ====== */
 @media (max-width: 768px) {
+  /* paginaPrincipal */
   .headline {
     flex-direction: column;
     gap: 15px;
