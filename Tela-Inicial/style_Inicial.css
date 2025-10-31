@@ -18,7 +18,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
 /* ====== VARIÁVEIS ====== */
 :root {
   --fundo-principal: #272e33;
@@ -51,6 +54,9 @@ a {
   --collection-1-buttonselected: rgba(58, 62, 75, 1);
   --collection-1-button1: rgba(12, 54, 45, 1);
   --collection-1-headlinetext: rgba(232, 242, 227, 1);
+
+  --collection-1-normalbutton: var(--collection-1-buttonselected);
+  --size-space-400: 16px;
 }
 
 /* ====== LAYOUT GERAL ====== */
@@ -324,15 +330,19 @@ header {
 .pg-conceitos .card6{
   border-radius: 20px;
   box-shadow: 4px 4px 4px #00000078;
-    background-color: #87ff8b; 
-
+  background-color: #87ff8b; 
   padding: 17px 10px;
+  cursor: pointer;
 }
 
 .frame article:hover {
   background-color: #277940; 
-  color: #fff; 
   transition: background-color 0.3s, color 0.2s;
+}
+.frame article:hover .title,
+.frame article:hover .supporting-text {
+  color: #ffffff; 
+  transition: color 0.2s;
 }
 
 .pg-conceitos .text-content,
@@ -362,14 +372,7 @@ header {
   line-height: 32px;
 }
 
-.pg-conceitos .allmoney {
-  position: absolute;
-  top: 379px;
-  left: 1396px;
-  width: 470px;
-  height: 587px;
-  object-fit: cover;
-}
+
 
 
 
