@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinheiro Organizado</title>
     <link rel="stylesheet" href="style_Inicial.css"/>
+    <link rel="stylesheet" href="globals_Contatos.css" />
+    <link rel="stylesheet" href="styleguide_Contatos.css" />
+    <link rel="stylesheet" href="style_Contatos.css" />
   </head>
 
   <body>
@@ -25,7 +28,7 @@
           <a href="#tela-inicial" class="btn ativo">INÍCIO</a>
           <a href="#conceitos" class="btn">CONCEITOS</a>
           <a href="#" class="btn">DICAS</a>
-          <a href="#" class="btn">CONTATOS</a>
+          <a href="#Contatos" class="btn">CONTATOS</a>
         </nav>
       </header>
 
@@ -120,6 +123,43 @@
       </section>
     </article>
 
+    <section id="Contatos" class="pg-Contatos">
+      <main>
+        <section class="contact-section">
+          <h2>ENTRE EM CONTATO</h2>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+            </div>
+
+            <input type="text" name="assunto" placeholder="Assunto" required>
+
+            <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+            <button type="submit">ENVIAR</button>
+          </form>
+        </section>
+      </main>
+    </section>
+    <footer>
+        <div class="footer-contacts">
+            <p class="creators">© 2025 - Desenvolvido por Evanilson Pinheiro, Mirian Menezes e Vitória Shailia</p>
+            <div class="contacts-logo">
+                <div class="Logo" role="img" aria-label="Logo Dinheiro Organizado">
+                    <img class="vector" src="img/logo.png" width="50px"/>
+                </div>
+                <nav class="button-list" aria-label="Redes sociais">
+                    <a href="#" class="logo-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <img class="png-insta" src="img/Logo Instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="#" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                        <img class="pngaaa-com" src="img/whattsapp.png" alt="WhatsApp" />
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </footer>
     <script src="script.js" defer></script>  
   </body>
 </html>
