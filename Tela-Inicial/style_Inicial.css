@@ -90,8 +90,10 @@ header {
   background-color: var(--gradiente-header);
   padding: 40px 60px;
   z-index: 2;
-  position: sticky;
-  
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
 }
 
 .logo-area {
@@ -145,8 +147,8 @@ header {
   line-height: 1.6;
   margin-bottom: 40px;
   margin-left: 50px;
-  margin-bottom: 200px;
-  margin-top: 70px;
+  margin-bottom: 220px;
+  margin-top: 140px;
   font-weight: 600;
 }
 
@@ -185,32 +187,47 @@ header {
     #fff;
   width: 100%;
   min-width: 1920px;
-  min-height: 1080px;
+  height: 90vh;
   position: relative;
 }
 .texts{
-  display: flex;
-  flex-direction: column;
+  margin: 50px 0px 0px 0px;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
 }
+
 .texts h1{
-  margin-top: 70px;
+  
   width: auto;
   font-family: "Alatsi-Regular", Helvetica;
   font-size: 65px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
-.texts p{
+.par p{
   font-family: "Ubuntu Mono-Regular", Helvetica;
   color: #72ce39;
   font-size: 28px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: normal;
 }
 
+.pg-conceitos .frame {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  max-width: 1300px;
+  gap: 20px;
+  row-gap: 40px;
+  position: absolute;
+  top: 320px;
+  left: 8%;
+}
 
 .pg-conceitos .frame-2 {
   display: flex;
@@ -281,9 +298,6 @@ header {
 }
 
 
-
-
-
 .pg-conceitos .rectangle {
   position: absolute;
   top: 59px;
@@ -302,18 +316,6 @@ header {
   object-fit: cover;
 }
 
-.pg-conceitos .frame {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  width: 1252px;
-  height: 627px;
-  gap: 20px;
-  position: absolute;
-  top: 411px;
-  left: 144px;
-}
-
 .pg-conceitos .card1,
 .pg-conceitos .card2,
 .pg-conceitos .card3,
@@ -322,7 +324,15 @@ header {
 .pg-conceitos .card6{
   border-radius: 20px;
   box-shadow: 4px 4px 4px #00000078;
-  background: linear-gradient(0deg, rgba(135, 255, 139, 1), rgba(135, 255, 139, 1));
+    background-color: #87ff8b; 
+
+  padding: 17px 10px;
+}
+
+.frame article:hover {
+  background-color: #277940; 
+  color: #fff; 
+  transition: background-color 0.3s, color 0.2s;
 }
 
 .pg-conceitos .text-content,
@@ -360,13 +370,6 @@ header {
   height: 587px;
   object-fit: cover;
 }
-
-
-
-
-
-
-
 
 
 
