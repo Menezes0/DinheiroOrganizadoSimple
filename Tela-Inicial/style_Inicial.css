@@ -192,25 +192,27 @@ header {
 .pg-conceitos {
   background: linear-gradient(0deg, rgba(255, 254, 219, 0.53), rgba(255, 254, 219, 0.53)),
     #fff;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-width: 1920px;
+  height: 970px;
   position: relative;
 }
 .texts{
-  padding-top: 130px;
+  margin: 50px 0px 0px 0px;
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 7px;
 }
 
 .texts h1{
+  
   width: auto;
   font-family: "Alatsi-Regular", Helvetica;
   font-size: 65px;
   font-weight: 700;
   text-align: center;
- 
+  margin-bottom: 1px;
 }
 
 .par p{
@@ -230,9 +232,7 @@ header {
   gap: 20px;
   row-gap: 40px;
   position: absolute;
-  justify-items: center;
-  align-items: center;
-  top: 440px;
+  top: 320px;
   left: 8%;
 }
 
@@ -244,6 +244,32 @@ header {
   text-shadow: 2px 8px 9px #00000040;
 }
 
+.pg-conceitos .buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 58px;
+  padding: 9px 28px;
+  list-style: none;
+  margin: 0;
+}
+.pg-conceitos .rectangle {
+  position: absolute;
+  top: 59px;
+  left: 17px;
+  width: 1920px;
+  height: 1104px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 100%);
+}
+
+.pg-conceitos .element-moeda {
+  position: absolute;
+  top: 184px;
+  left: 1253px;
+  width: 161px;
+  height: 167px;
+  object-fit: cover;
+}
 
 .pg-conceitos .card1,
 .pg-conceitos .card2,
@@ -256,8 +282,6 @@ header {
   background-color: #87ff8b; 
   padding: 17px 10px;
   cursor: pointer;
-  width: 420px;
-  height: 240px;
 }
 
 .frame article:hover {
@@ -302,128 +326,31 @@ header {
 
 
 /* ====== RESPONSIVIDADE ====== */
-
-/* ===== Tablets (até 1024px) ===== */
-@media (max-width: 1024px) {
-
-  header {
-    padding: 25px 40px;
-  }
-
-  .nome-logo {
-    font-size: 20px;
-  }
-
-  .buttons {
-    gap: 18px;
-  }
-
-  .btn {
-    padding: 14px 18px;
-    font-size: 15px;
-  }
-
-  .conteudo {
-    padding: 200px 50px;
-  }
-
-  .educacao-financeira {
-    font-size: 2.8vw;
-    margin-left: 20px;
-    max-width: 600px;
-    margin-bottom: 150px;
-  }
-
-  .btn-veja-mais {
-    font-size: 18px;
-    padding: 12px 30px;
-  }
-}
-
-/* ===== Celulares até 600px (intermediário) ===== */
-@media (max-width: 600px) {
-  header {
+@media (max-width: 768px) {
+  /* paginaPrincipal */
+  .headline {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 25px;
     gap: 15px;
-  }
-
-  .logo-area {
-    justify-content: center;
-    width: 100%;
+    text-align: center;
   }
 
   .buttons {
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .btn {
-    padding: 10px 15px;
-    font-size: 14px;
   }
 
   .conteudo {
-    padding: 150px 25px;
+    padding: 100px 20px;
     text-align: center;
   }
 
   .educacao-financeira {
-    font-size: 5vw;
-    margin: 100px auto 120px auto;
-    max-width: 90%;
-  }
-
-  .botao {
-    margin-top: 50px;
+    max-width: 100%;
+    font-size: 2rem;
   }
 
   .btn-veja-mais {
-    width: 30%;
-    max-width: 300px;
-    font-size: 16px;
-    padding: 10px;
-  }
-}
-
-/* ===== Celulares pequenos até 350px ===== */
-@media (max-width: 350px) {
-  header {
-    padding: 15px 20px;
-  }
-
-  .nome-logo {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .buttons {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .btn {
-    font-size: 13px;
-    padding: 8px 12px;
-  }
-
-  .conteudo {
-    padding: 130px 20px;
-  }
-
-  .educacao-financeira {
-    font-size: 5.5vw;
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  .btn-veja-mais {
-    font-size: 16px;
-    width: 100%;
-    border-radius: 12px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 10px 35px;
   }
 }
