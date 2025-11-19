@@ -100,7 +100,7 @@ header {
   z-index: 2;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
   top: 0;
 }
 
@@ -160,12 +160,12 @@ header {
   font-weight: 600;
 }
 
-
 .botao{
   display: flex;
   justify-content: center;
   margin-top: 110px;
 }
+
 .btn-veja-mais {
   display: flex;
   align-items: center;
@@ -198,7 +198,7 @@ header {
   position: relative;
 }
 .texts{
-  margin: 50px 0px 0px 0px;
+  padding-top: 120px;
   align-items: center;
   display: flex;
   justify-content: center;
