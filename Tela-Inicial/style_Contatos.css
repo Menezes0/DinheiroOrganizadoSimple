@@ -13,8 +13,7 @@
   justify-items: center;
   align-items: center;
 }
-
-.pg-Contatos .contact-section {
+main .contact-section {
   font-family: "Alatsi", Helvetica;
   width: 1249px;
   max-width: 1249px;

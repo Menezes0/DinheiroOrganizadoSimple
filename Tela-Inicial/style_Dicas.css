@@ -142,6 +142,7 @@ section {
     justify-content: center;
     width: 50rem;
     display: flex;
+    align-items: center;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 12px;
     padding: 70px 60px;
@@ -171,7 +172,7 @@ section {
     justify-content: space-between;
 }
 .big-card h3{
-    font-size: 28px;
+    font-size: 32px;
     font-weight: normal;
     color: #000000e7;
     margin-bottom: 15px;
@@ -192,4 +193,11 @@ section {
 
 .pg-Dicas a:hover {
     background-color: #999595c0;
+}
+.icone-link{
+    display: flex;
+    width: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+ 
 }
